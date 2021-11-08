@@ -15,9 +15,17 @@ class LivroTest extends TestCase
      */
     public function test_example()
     {
-        $response = $this->get('/');
+        $this->get('/login')->assertStatus(200);
+    }
 
-        $response->assertStatus(200);
+    public function testRegister()
+    {
+        $this->get('/registration')->assertStatus(200);
+    }
+
+    public function testDashboard()
+    {
+        $this->get('/dashboard')->assertStatus(200);
     }
 
 }
