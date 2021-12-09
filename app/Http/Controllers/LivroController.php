@@ -95,7 +95,16 @@ class LivroController extends Controller
         ]);
 
         try {
-            Livro::whereId($id)->update($updateData);
+            //Livro::whereId($id)->update($updateData);
+
+            $livro = Livro::find($id);
+
+            $livro->titulo = $request->get('titulo');
+            $livro->descricao = $request->get('descricao');
+            $livro->autor = $request->get('autor');
+            $livro->numero_pagina = $request->get('numero_pagina');
+
+            $livro->save();
 
             return redirect()->route('livros.index')
                 ->withInput()
