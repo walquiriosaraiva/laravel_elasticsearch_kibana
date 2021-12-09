@@ -30,6 +30,8 @@ Aplicação desenvolvida com Laravel + MySQL utilizando docker:
 - E-mail: `walquiriosaraiva@gmail.com`
 - senha: `Esqueci01`
 - Caso queria se cadastrar vá para o link Cadastrar e faça seu cadastro para ter acesso.
+- Para acessar o elasticsearch acesse  [http://localhost:9200](http://localhost:9200)
+- Para acessar o kibana acesse  [http://localhost:5601](http://localhost:5601)
 
 # Problemas de permissão
 ## Caso tenha problema de permissão e não consiga rodar com o docker tente novamente seguindo os comandos abaixo
