@@ -24,6 +24,7 @@ Aplicação desenvolvida com Laravel + MySQL utilizando docker:
 ## Passo 3 - rodando os container adicionais para manipular comandos Composer e Artisan
 - Execute o comando do composer update `docker-compose run --rm composer update`
 - Execute o comando `docker-compose run --rm artisan migrate --seed`
+- Execute o comando `docker-compose run --rm artisan search:reindex`
 - Agora acesse a aplicação na url [http://localhost](http://localhost), vai aparecer a tela principal do Laravel com dois links de acesso no menu superior.
 - Clique em acessar e o campo de usuário e senha já está preenchido com o usuário criado pelos migrations seeds
 - E-mail: `walquiriosaraiva@gmail.com`
